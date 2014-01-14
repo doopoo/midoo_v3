@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">FaXingQuan</string>
+    
+    
+    <string name="changing_fragments">菜单</string>
+    <string name="str_title_main">全部風格</string>
+    
+    <string name="responsive_ui">Responsive UI</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="sd_nofound">sd卡不存在！</string>
+    
+    <string name="github">GitHub</string>
+    <string name="github_label">SlidingMenu on GitHub</string>
+    <string name="viewpager">ViewPager</string>
+    
+    <string name="descr_image">Image</string>
+    <string name="anim_slide">Slide Up</string>
+    
+    <string name="about">About</string>
+    <string name="licenses">Licenses</string>
+    <string name="contact">Contact</string>
+    
+    <string name="fxq_menu_mode1">浏览模式</string>
+    <string name="fxq_menu_mode2">点评模式</string>
+    
+    
+    
+    <string name="menu_item_clear_memory_cache">Clear memory cache</string>
+    <string name="menu_item_clear_disc_cache">Clear disc cache</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+</resources>

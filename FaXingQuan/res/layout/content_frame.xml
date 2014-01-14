@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ <com.midooo.lib.BaseFramework.ScrollViewExtend xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaXingQuanMainActivity" >
+</com.midooo.lib.BaseFramework.ScrollViewExtend>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rankings_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+ -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    	<FrameLayout
+    		android:id="@+id/content_frame"
+    		android:layout_width="match_parent"
+    		android:layout_height="160dip" />
+    	<FrameLayout
+    		android:id="@+id/rankings_grid"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="0dip"/>
+    </LinearLayout>

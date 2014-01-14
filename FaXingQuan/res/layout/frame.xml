@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.midooo.lib.BaseFramework.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/keyboardLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+     <include
+         
+        android:id="@+id/head_layout"
+        layout="@layout/custom_title" />
+
+      <LinearLayout
+        android:id="@+id/frame_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:orientation="horizontal"
+    	android:layout_below="@id/head_layout"
+        >
+        <!-- 
+    	style="@style/content_marginBottom"
+    	android:background="@drawable/shouye_bg"
+    	 -->
+    </LinearLayout>
+
+            <RelativeLayout
+                 android:id="@+id/ll_bar"
+                 style="@style/bottom_bar"
+                  android:layout_alignParentBottom="true" >
+			<!-- android:background="@drawable/shouye_underbar" -->
+                <ImageButton
+                    android:id="@+id/ibtn_shares"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:padding="10dp"
+                     />
+                <!-- android:background="@drawable/shouye_underbar_left_icon" -->
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible" />
+                <!-- android:background="@drawable/shouye_underbar_btn_m" -->
+				
+                <ImageButton
+                    android:id="@+id/ibtn_remind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                     android:padding="10dp" />
+                <!-- android:background="@drawable/shouye_underbar_rignt_icon" -->
+                <TextView
+                    android:id="@+id/tv_remind_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/ibtn_remind"
+                    android:layout_alignTop="@id/ibtn_remind"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"
+                    android:text="0"
+                    />
+                <!--                     android:background="@drawable/shouye_underbar_red"  -->
+            </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        >
+           <ImageButton
+            android:id="@+id/ibtn_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" />
+           <!-- android:background="@drawable/shouye_underbar_btn_m" -->
+    </FrameLayout>
+
+</com.midooo.lib.BaseFramework.KeyboardLayout>
