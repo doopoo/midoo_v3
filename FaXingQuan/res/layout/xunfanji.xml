@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout 
+    android:id="@+id/iv_xunfanji_test"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xunfanjinew2_bg1"
+    android:gravity="bottom|right"
+   
+    >
+    <ImageView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/xunfanjinew2_btn_kaishiceshi"
+    	android:layout_marginRight="15dp"
+    	android:layout_marginBottom="40dp"
+    	android:layout_marginLeft="200dip"
+        />
+</LinearLayout>
+<LinearLayout 
+     android:id="@+id/iv_xunfanji_select"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xunfanjinew2_bg2"
+     android:gravity="bottom"
+    >
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="40dip"
+         android:layout_marginLeft="20dip"
+         android:layout_marginRight="200dip"
+         android:background="@drawable/xunfanjinew2_btn_xuanzefengge" />
+
+</LinearLayout>
+</LinearLayout>

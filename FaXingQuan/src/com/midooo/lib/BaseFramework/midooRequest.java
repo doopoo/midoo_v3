@@ -1,39 +1,62 @@
 // Static wrapper library around AsyncHttpClient
 package com.midooo.lib.BaseFramework;
 
+import java.util.concurrent.ThreadPoolExecutor;
 
 import com.loopj.android.http.*;
 
-public class midooRequest {
-    private static AsyncHttpClient client = new AsyncHttpClient();
-    
-    
 
+public final class midooRequest {
+	
+	
+	//AsyncHttpClient client = UILApplication.getClient();
+	
+	
+
+
+	
+	// = UILApplication.getInstance.getClient();
+    
     public static void post(String url, RequestParams params, JsonHttpResponseHandler responseHandler) {
+    	
+    	
+    	AsyncHttpClient client = new AsyncHttpClient();
+    	ThreadPoolExecutor threadPool = HttpThreadPool.getInstance();
+    	client.setThreadPool(threadPool);
+    	
+    	
 		client.setCookieStore(UILApplication.getCookieStore());
 		if(params==null) client.post(getAbsoluteUrl(url), responseHandler);
 		else client.post(getAbsoluteUrl(url), params, responseHandler);
     }    
     
     public static void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+    	
+    	AsyncHttpClient client = new AsyncHttpClient();
+    	ThreadPoolExecutor threadPool = HttpThreadPool.getInstance();
+    	client.setThreadPool(threadPool);
+    	
 		client.setCookieStore(UILApplication.getCookieStore());
 		if(params==null) client.post(getAbsoluteUrl(url), responseHandler);
 		else client.post(getAbsoluteUrl(url), params, responseHandler);
     }   
     
-
     public static void post(String url, RequestParams params, TextHttpResponseHandler responseHandler) {
+    	AsyncHttpClient client = new AsyncHttpClient();
+    	ThreadPoolExecutor threadPool = HttpThreadPool.getInstance();
+    	client.setThreadPool(threadPool);
+    	
+    	
 		client.setCookieStore(UILApplication.getCookieStore());
 		if(params==null) client.post(getAbsoluteUrl(url), responseHandler);
 		else client.post(getAbsoluteUrl(url), params, responseHandler);
     }
-  
-    
+/*
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
     	client.setCookieStore(UILApplication.getCookieStore()); 
     	client.get(getAbsoluteUrl(url), params, responseHandler);
     }
-
+*/
 
     
  

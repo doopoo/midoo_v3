@@ -69,9 +69,10 @@ public class autoLogin {
 	public static void login() {
 		RequestParams params = new RequestParams();
 
-		params.put("username", "doopoo");
+		params.put("username", "SH20000033");
 		params.put("pwd", "123456");
-	
+		params.put("device", "");
+		
 		midooRequest.post("/user/index/login", params, new JsonHttpResponseHandler(){
 			
 

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="one">
+	    <item>您的肤色色相：</item>
+        <item>暖色系</item>
+        <item>中性色</item>
+        <item>冷色系</item>
+	</string-array>
+	
+	<string-array name="two">
+	    <item>您的肤色明度：</item>
+        <item>偏浅</item>
+        <item>适中</item>
+        <item>偏深</item>
+	</string-array>
+    
+	<string-array name="three">
+	    <item>您的脸部轮廓：</item>
+        <item>曲线型</item>
+        <item>中间型</item>
+        <item>直线型</item>
+	</string-array>
+	
+	<string-array name="four">
+	    <item>您的脸部轮廓质感：</item>
+        <item>质感柔和</item>
+        <item>质感适中</item>
+        <item>质感硬朗</item>
+	</string-array>
+	
+	<string-array name="fivf">
+	    <item>您的脸部平衡：</item>
+        <item>较远</item>
+        <item>中间</item>
+        <item>较近</item>
+	</string-array>
+	
+	<string-array name="six">
+	    <item>您的脸部平衡质感：</item>
+        <item>质感柔和</item>
+        <item>质感适中</item>
+        <item>质感硬朗</item>
+	</string-array>
+	
+	<string-array name="seven">
+	    <item>您的眉形轮廓：</item>
+        <item>曲线型</item>
+        <item>中间型</item>
+        <item>直线型</item>
+	</string-array>
+	
+	<string-array name="enght">
+	    <item>您的眉形质感：</item>
+        <item>质感柔和</item>
+        <item>质感适中</item>
+        <item>质感硬朗</item>
+	</string-array>
+	
+	<string-array name="nine">
+	    <item>您的眼形轮廓：</item>
+        <item>曲线型</item>
+        <item>中间型</item>
+        <item>直线型</item>
+	</string-array>
+	
+	<string-array name="ten">
+	    <item>您的眼形质感：</item>
+        <item>质感柔和</item>
+        <item>质感适中</item>
+        <item>质感硬朗</item>
+	</string-array>
+	
+	<string-array name="eleven">
+	    <item>您的鼻形轮廓：</item>
+        <item>曲线型</item>
+        <item>中间型</item>
+        <item>直线型</item>
+	</string-array>
+	
+	<string-array name="twelve">
+	    <item>您的鼻形质感：</item>
+        <item>质感柔和</item>
+        <item>质感适中</item>
+        <item>质感硬朗</item>
+	</string-array>
+	
+	<string-array name="thirteen">
+	    <item>您的唇形轮廓：</item>
+        <item>曲线型</item>
+        <item>中间型</item>
+        <item>直线型</item>
+	</string-array>
+	
+	<string-array name="fourteen">
+	    <item>您的唇形质感：</item>
+        <item>质感柔和</item>
+        <item>质感适中</item>
+        <item>质感硬朗</item>
+	</string-array>
+	
+	<string-array name="fifteen">
+	    <item>您的身高比例：</item>
+        <item>160cm以下</item>
+        <item>161cm~167cm</item>
+        <item>168cm以上</item>
+	</string-array>
+	
+	<string-array name="sixteen">
+	    <item>您的肩部比例：</item>
+        <item>溜肩</item>
+        <item>平肩</item>
+        <item>端肩</item>
+	</string-array>
+
+</resources>

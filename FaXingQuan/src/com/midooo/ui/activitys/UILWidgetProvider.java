@@ -47,7 +47,7 @@ public class UILWidgetProvider extends AppWidgetProvider {
 
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
-		UILApplication.initImageLoader(context);
+		UILApplication.getInstance().initImageLoader(context);
 
 		final int widgetCount = appWidgetIds.length;
 		for (int i = 0; i < widgetCount; i++) {

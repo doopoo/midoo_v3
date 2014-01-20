@@ -1,8 +1,12 @@
 package com.midooo.ui.activitys;
 
+import com.midooo.ui.chaoliuquan.BookShelfActivity;
+import com.midooo.ui.xunfanji.CefenggeActivity;
+import com.midooo.ui.xunfanji.XunfanjiActivity;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
@@ -33,10 +37,10 @@ public class FaXingQuanMenuFragment extends Fragment {
 
 	private GridView menuGrid;
 	
-    public final static String[] menu_image = {"drawable://"+R.drawable.xunfanji, "drawable://"+R.drawable.aimeise,
-    	"drawable://"+R.drawable.taofaxing, "drawable://"+R.drawable.gukebiao, "drawable://"+R.drawable.waimaibao, 
-    	"drawable://"+R.drawable.yuyuekong,"drawable://"+R.drawable.chaoliuquan, 
-    	"drawable://"+R.drawable.xiaofeiku, "drawable://"+R.drawable.more };//菜单图片资源  
+    public final static String[] menu_image = {"drawable://"+R.drawable.xunfanji, "drawable://"+R.drawable.gukebiao, 
+    	"drawable://"+R.drawable.chaoliuquan, "drawable://"+R.drawable.aimeise, "drawable://"+R.drawable.xiaofeiku,
+    	"drawable://"+R.drawable.yuyuekong, "drawable://"+R.drawable.taofaxing, "drawable://"+R.drawable.waimaibao, 
+    	 "drawable://"+R.drawable.more };//菜单图片资源  
     //public final static String[] menu_name_array = { "用户反馈","帮助","退出", };//菜单文字资源  
  
 
@@ -55,7 +59,25 @@ public class FaXingQuanMenuFragment extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				//startImagePagerActivity(position);
-				Log.w("---doop---", "startImagePagerActivity(position)");
+				Log.w("---doop---", "startImagePagerActivity(position)----"+position+"-----");
+				switch (position) {
+				case 0:
+					
+					Intent xfj=new Intent((FaXingQuanMainActivity) getActivity(), XunfanjiActivity.class);
+
+					startActivity(xfj);
+
+					break;
+				case 1:
+					//newContent = new ColorFragment(R.color.green);BookShelfActivity
+					break;
+
+				case 2:
+
+					startActivity(new Intent((FaXingQuanMainActivity) getActivity(), BookShelfActivity.class));
+					//newContent = new ColorFragment(R.color.green);
+					break;
+				}				
 			}
 		});
 		return layoutView;

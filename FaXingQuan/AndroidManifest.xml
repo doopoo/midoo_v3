@@ -40,8 +40,24 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>        
-        
+        </activity>
+        <activity
+            android:name="com.midooo.ui.xunfanji.XunfanjiActivity"
+            android:screenOrientation="portrait" /> 
+        <activity
+            android:name="com.midooo.ui.chaoliuquan.BookShelfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.midooo.ui.xunfanji.CefenggeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.midooo.ui.xunfanji.StyleIntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.midooo.ui.xunfanji.NineStyleActivity"
+            android:screenOrientation="portrait" />
+                 
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".ResponsiveUIActivity" />   
         

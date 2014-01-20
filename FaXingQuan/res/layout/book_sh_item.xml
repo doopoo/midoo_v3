@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/book_sh_item"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+
+		
+		<ImageView 
+			android:id="@+id/book_sh_image"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:adjustViewBounds="true"
+    		android:scaleType="centerCrop" 
+    		android:contentDescription="@string/descr_image"
+			android:focusable="false"
+            android:src="@drawable/chaoliuquan_photo"
+            android:gravity="center"
+            android:focusableInTouchMode="false"/>
+
+		<TextView
+		    android:id="@+id/book_sh_title"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="10dp"
+		    android:gravity="center"
+		    android:padding="0dp"
+		    android:paddingTop="0dp"
+		    android:textColor="@android:color/white" />
+                         
+</LinearLayout>
+
+

@@ -63,4 +63,61 @@
       <item name="android:paddingRight">8dip</item>  
   </style> 
 
+  
+  
+  
+    <style name="cefengge_margin" >
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+    <style name="cefengge_item_bottom" >
+           <item name="android:layout_height">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+         <style name="cefengge_txt_marginTop" >
+        <item name="android:layout_marginTop">5dip</item>
+    </style>
+    <style name="cefengge_item_marginTop" >
+        <item name="android:layout_marginTop">20dip</item>
+    </style>
+    <style name="cefengge_item_img_bg" >
+        <item name="android:padding">0dip</item>
+    </style>
+    <style name="cefengge_viewGroup" >
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+         <style name="cefengge_item_margin" >
+        <item name="android:layout_marginRight">0dip</item>
+    </style>
+    
+
+    <style name="ll_xunfanji_intro" >
+      <item name="android:layout_marginRight">20dp</item>
+    </style>
+    <style name="iv_faxingxiangqing_hair" >
+      <item name="android:layout_width">150dp</item>
+      <item name="android:layout_height">150dp</item>
+    </style>         
+
+    <style name="book_ll_item" >
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+    <style name="book_ll_pading" >
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+        <style name="book_group_bottom" >
+        <item name="android:layout_marginBottom">60dp</item>
+    </style>
+	<style name="book_progessbar_margin" parent="@android:style/Widget.ProgressBar.Horizontal"> 
+    	<item name="android:maxHeight">50dip</item> 
+    	<item name="android:minHeight">5dip</item> 
+    	<item name="android:indeterminateOnly">false</item> 
+    	<item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item> 
+    	<item name="android:progressDrawable">@drawable/progressbar_mini</item> 
+    	<item name="android:layout_marginLeft">15dip</item>
+    	<item name="android:layout_marginRight">15dip</item>
+	</style>    
 </resources>

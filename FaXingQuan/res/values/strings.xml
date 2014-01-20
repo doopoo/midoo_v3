@@ -1,16 +1,20 @@
 <resources>
 
     <string name="app_name">FaXingQuan</string>
-    
+    <string name="hello_world">Hello world!</string>
     
     <string name="changing_fragments">菜单</string>
     <string name="str_title_main">全部風格</string>
-    
+    <string name="sys_setting">系统设置</string>    
     <string name="responsive_ui">Responsive UI</string>
     <string name="left">Left</string>
     <string name="right">Right</string>
     <string name="sd_nofound">sd卡不存在！</string>
+    <string name="sd_isdowning">有任务正在进行，请稍候再试！</string>
+    <string name="sd_isdowned">下载完成</string>
     
+    <string name="str_title_xunfanji">寻范记</string>
+    <string name="str_title_jiufengge">九风格</string>
     <string name="github">GitHub</string>
     <string name="github_label">SlidingMenu on GitHub</string>
     <string name="viewpager">ViewPager</string>
@@ -25,7 +29,15 @@
     <string name="fxq_menu_mode1">浏览模式</string>
     <string name="fxq_menu_mode2">点评模式</string>
     
-    
+	<string name="str_daibiaomingxing">代表明星</string>
+    <string name="str_str_fenggetedian">风格特点：</string>
+    <string name="str_faxingtedian">发型特点：</string>
+    <string name="str_fenggetedian">风格特点：</string>
+    <string name="str_fenggebiaoqian">风格标签：</string>
+    <string name="str_ranfajianyi">染发建议：</string>
+    <string name="str_tuijian">密豆色号推荐：</string>
+    <string name="str_tangfajianyi">烫发建议：</string>
+    <string name="str_tangfajianyi_content">请参考“发型制作”的“轮廓描述”。</string>
     
     <string name="menu_item_clear_memory_cache">Clear memory cache</string>
     <string name="menu_item_clear_disc_cache">Clear disc cache</string>

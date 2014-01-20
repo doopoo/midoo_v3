@@ -5,9 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -40,7 +43,7 @@ import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.SimpleBitmapDisplayer;
 
 public class BaseActivity extends 
-	SlidingFragmentActivity implements OnClickListener {
+	SlidingFragmentActivity {
 	
 	private boolean isRequesting;
 	private ProgressDialog progressDialog;
@@ -125,6 +128,7 @@ public class BaseActivity extends
 		// set the Behind View
 		//super.setContentView(R.layout.frame);menu_frame
 		setBehindContentView(R.layout.frame);
+		/*
 		if (savedInstanceState == null) {
 			FragmentTransaction t = this.getSupportFragmentManager().beginTransaction();
 			mFrag = new SampleListFragment();
@@ -133,7 +137,7 @@ public class BaseActivity extends
 		} else {
 			mFrag = (ListFragment)this.getSupportFragmentManager().findFragmentById(R.id.menu_frame);
 		}
-
+*/
 		// customize the SlidingMenu
 		SlidingMenu sm = getSlidingMenu();//SlidingMenu控件的初始化 
 		sm.setShadowWidthRes(R.dimen.shadow_width);//阴影宽度  
@@ -144,7 +148,7 @@ public class BaseActivity extends
 
 		//getSupportActionBar().setDisplayHomeAsUpEnabled(true); //ActionBar返回启用
 		initBaseView();
-		setBaseListener();
+		//setBaseListener();
 
 	}
 
@@ -199,7 +203,7 @@ public class BaseActivity extends
 		}
 	}
 	
-
+/*
 	private void setBaseListener() {
 		ibtn_header_left.setOnClickListener(this);
 		ibtn_header_right.setOnClickListener(this);
@@ -207,7 +211,7 @@ public class BaseActivity extends
 		ibtn_remind.setOnClickListener(this);
 		ibtn_main.setOnClickListener(this);
 	}
-	
+	*/
 
 	@Override
 	protected void onPause() {
@@ -217,11 +221,6 @@ public class BaseActivity extends
 
 
 
-	@Override
-	public void onClick(View arg0) {
-		// TODO Auto-generated method stub
-		
-	}
 
 
 
@@ -272,6 +271,14 @@ public class BaseActivity extends
 
 */
 
-	
+	public boolean hasNetwork(Context context) {
+		ConnectivityManager con = (ConnectivityManager) context
+				.getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo workinfo = con.getActiveNetworkInfo();
+		if (workinfo == null || !workinfo.isAvailable()||!workinfo.isConnected()) {
+			return false;
+		}
+		return true;
+	}	
 	
 }

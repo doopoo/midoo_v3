@@ -3,6 +3,14 @@
     android:id="@+id/image"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:adjustViewBounds="true"
+    android:background="@color/gray2"
     android:contentDescription="@string/descr_image"
+    android:padding="36dip"
+    android:paddingBottom="36dip"
+    android:paddingLeft="36dip"
+    android:paddingRight="36dip"
+    android:paddingTop="36dip"
     android:scaleType="centerCrop" />
+
